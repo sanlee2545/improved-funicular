@@ -206,11 +206,11 @@ class Nearest_Neighbors:
         """KNN procedure using sorting and brute force.
          
         Steps :
-            - For every test data point, get the distances.
-            - Sort the distances and apply the same transformation to
-                  the training dataset.
-            - Do either classification by majority or regression on
-                  the k nearest neighbors.
+        - For every test data point, get the distances.
+        - Sort the distances and apply the same transformation to the
+          training dataset.
+        - Do either classification by majority or regression on the k
+          nearest neighbors.
 
         Taken from "Understanding Machine Learning" Ch. 19 : Nearest
         Neighbor.
@@ -245,6 +245,15 @@ class Nearest_Neighbors:
 
     def lsh(self, test_dataset):
         """Locality Sensitive Hashing procedure.
+
+        Steps :
+        - Preprocess the training data.
+        - For every query point in test_dataset, get the hash value
+          which leads us to a hash bucket.
+        - Take the labels of the points in the bucket and add them to
+          list_of_close_labels.
+        - Use self.prediction_function on list_of_close_labels to get
+          the prediction.
 
         Taken from "Similarity Search in High Dimensions via Hashing".
 
