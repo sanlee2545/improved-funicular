@@ -1,4 +1,8 @@
-* Repository Contents
+* KNN Search Algorithm Implementations
+- Ball tree
+- Locality Sensitive Hashing
+- Vanilla KNN
+** Repository Contents
 - ~ball_tree.py~ : The ball tree class.
 - ~functions.py~ : Miscellaneous functions.
 - ~main.py~ : Main function.
