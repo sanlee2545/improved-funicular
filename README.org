@@ -15,3 +15,21 @@ a random noise term in ~[-1,+1]~.
 - ~functions.py~ : Miscellaneous functions.
 - ~main.py~ : Main function.
 - ~nearest_neighbors.py~ : The nearest neighbors predictor class.
+** Sources
+*** /Understanding Machine Learning/ by Shalev-Shwartz and Ben-David
+For the vanilla KNN search algorithm.
+*** [[https://en.wikipedia.org/wiki/Ball_tree][Ball Tree -- Wikipedia]]
+For the construction and search algorithms for Ball Trees.
+*** /Introduction to Algorithms/ by CLRS
+For the Insertion Sort algorithm and the Priority Queue data
+structure.
+*** [[https://docs.python.org/3/tutorial/datastructures.html#more-on-lists][Python Tutorial Part 5]]
+For the matrix transpose code in section 5.1.4.
+*** /Foundations of Multidimensional and Metric Data Structures/ by Samet
+For the informative example of Locality Sensitive Hashing given by
+figure 4.99 on page 713.
+*** /Nearest Neighbor Methods in Learning and Vision/ by Shakhnarovich, Darrell, and Indyk
+For the general background knowledge on exact and approximate nearest
+neighbor methods.
+*** /Similarity Search in High Dimensions via Hashing/ by Gionis, Indyk, and Motwani
+For the Locality Sensitive Hashing algorithm blueprint.
