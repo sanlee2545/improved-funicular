@@ -30,6 +30,7 @@ neighbor methods.
 *** [[https://docs.python.org/3/tutorial/datastructures.html#more-on-lists][Python Tutorial Part 5]]
 For the matrix transpose code in section 5.1.4.
 *** /Similarity Search in High Dimensions via Hashing/ by Gionis, Indyk, and Motwani
-For the Locality Sensitive Hashing algorithm blueprint.
+For the Locality Sensitive Hashing algorithm and suggestions for
+parameter values and hash function.
 *** /Understanding Machine Learning/ by Shalev-Shwartz and Ben-David
 For the vanilla KNN search algorithm.
