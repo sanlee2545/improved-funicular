@@ -1,7 +1,15 @@
 * KNN Search Algorithm Implementations
-- Ball tree
+- Ball Tree
 - Locality Sensitive Hashing
 - Vanilla KNN
+** Dependencies and Requirements
+Python3
+** How to Run Program
+Use ~python main.py~ to run a test of the three different
+algorithms. The time and error will be measured and displayed. The
+~test_knn()~ method in ~nearest_neighbors.py~ will generate a dataset
+of points ~(x, f(x))~ where ~f(x)=x^2+w~ and ~w~ is a random noise
+term in ~[-1,+1]~.
 ** Repository Contents
 - ~ball_tree.py~ : The ball tree class.
 - ~functions.py~ : Miscellaneous functions.

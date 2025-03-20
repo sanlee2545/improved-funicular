@@ -204,6 +204,8 @@ def get_vocabulary(data_points):
 def insertion_sort_parallel(dataset, distances):
     """Insertion sort on distances and dataset in parallel.
 
+    Taken from "Introduction to Algorithms" by CLRS.
+
     Args :
         dataset (2D list) : Training dataset rows including labels.
         distances (1D list) : Distances from a particular point to each
@@ -266,7 +268,7 @@ def regress(data_points):
 def transpose(matrix):
     """Transpose a matrix.
 
-    Taken from Python Tutorial Section 5.1.4. Nested List
+    Taken from Python Tutorial Section 5.1.4. : Nested List
     Comprehensions.
 
     Args :

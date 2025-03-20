@@ -9,6 +9,8 @@ from statistics import median, variance
 class Ball_Tree:
     """Ball tree data structure.
 
+    Taken from wikipedia.org/wiki/Ball_tree .
+
     Attributes :
         root_node (node) : Pointer to root node.
     """

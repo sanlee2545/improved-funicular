@@ -211,6 +211,9 @@ class Nearest_Neighbors:
                   the training dataset.
             - Do either classification by majority or regression on
                   the k nearest neighbors.
+
+        Taken from "Understanding Machine Learning" Ch. 19 : Nearest
+        Neighbor.
          
         Args :
             test_dataset (2D list) : Same format as training dataset.
