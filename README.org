@@ -11,6 +11,7 @@ and displayed. The ~test_knn()~ method in ~nearest_neighbors.py~ will
 generate a dataset of points ~(x, f(x))~ where ~f(x)=x^2+w~ and ~w~ is
 a random noise term in ~[-1,+1]~.
 ** Repository Contents
+- ~README.org~ : Read me file.
 - ~ball_tree.py~ : The ball tree class.
 - ~functions.py~ : Miscellaneous functions.
 - ~main.py~ : Main function.
