@@ -283,17 +283,6 @@ class Nearest_Neighbors:
                             if len(list_of_close_labels) < self.k:
                                 list_of_close_labels.append(
                                     [0, stack[j]])
-            """
-            if len(list_of_close_labels) == 0:
-                if self.prediction_function == regress:
-                    predictions.append(5.5)
-            elif len(list_of_close_labels) == 1:
-                if self.prediction_function == regress:
-                    predictions.append(list_of_close_labels)
-            else:
-                predictions.append(
-                    self.prediction_function(list_of_close_labels))
-            """
             
             predictions.append(
                 self.prediction_function(list_of_close_labels))
