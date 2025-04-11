@@ -6,11 +6,13 @@ This set of programs has rudimentary implementations of:
 ** Dependencies and Requirements
 Python3
 ** How to Run Program
-Download all ~*.py~ files and use ~python main.py~ or ~python3
-main.py~ to run a test of the three different algorithms. The time and
-error will be measured and displayed. The ~test_knn()~ method in
-~nearest_neighbors.py~ will generate a dataset of points ~(x, f(x))~
-where ~f(x)=x^2+w~ and ~-1<=w<=+1~ is a random noise term.
+- Download all ~*.py~ files.
+- Use ~python main.py~ or ~python3 main.py~ to run a test of the three
+  different algorithms. The time and error will be measured and
+  displayed.
+- The ~test_knn()~ method in ~nearest_neighbors.py~ will generate a
+  dataset of points ~(x, f(x))~ where ~f(x)=x^2+w~ and ~w~ is a random
+  noise term in ~[-1,+1]~.
 ** Notes
 I wanted to implement Nearest Neighbors because it is an interesting
 and elegant Machine Learning method. I chose Ball Trees and Locality
@@ -18,7 +20,7 @@ Sensitive Hashing as representatives of Approximate Nearest Neighbor
 methods. Locality Sensitive Hashing took a long time to understand.
 ** Repository Contents
 - ~README.org~ : Read me file.
-- ~ball_tree.py~ : The ball tree class.
+- ~ball_tree.py~ : The Ball Tree class.
 - ~functions.py~ : Miscellaneous functions.
 - ~main.py~ : Main function.
 - ~nearest_neighbors.py~ : The nearest neighbors predictor class.
