@@ -1,7 +1,8 @@
 * KNN Search Algorithm Implementations
-- Ball Tree
-- Locality Sensitive Hashing
-- Vanilla KNN
+This set of programs has rudimentary implementations of:
+- Ball Tree;
+- Locality Sensitive Hashing;
+- Vanilla KNN.
 ** Dependencies and Requirements
 Python3
 ** How to Run Program
@@ -9,7 +10,12 @@ Download all ~*.py~ files and use ~python main.py~ or ~python3
 main.py~ to run a test of the three different algorithms. The time and
 error will be measured and displayed. The ~test_knn()~ method in
 ~nearest_neighbors.py~ will generate a dataset of points ~(x, f(x))~
-where ~f(x)=x^2+w~ and ~w~ is a random noise term in ~[-1,+1]~.
+where ~f(x)=x^2+w~ and ~-1<=w<=+1~ is a random noise term.
+** Notes
+I wanted to implement Nearest Neighbors because it is an interesting
+and elegant Machine Learning method. I chose Ball Trees and Locality
+Sensitive Hashing as representatives of Approximate Nearest Neighbor
+methods. Locality Sensitive Hashing took a long time to understand.
 ** Repository Contents
 - ~README.org~ : Read me file.
 - ~ball_tree.py~ : The ball tree class.
@@ -17,21 +23,29 @@ where ~f(x)=x^2+w~ and ~w~ is a random noise term in ~[-1,+1]~.
 - ~main.py~ : Main function.
 - ~nearest_neighbors.py~ : The nearest neighbors predictor class.
 ** Sources
-*** [[https://en.wikipedia.org/wiki/Ball_tree][Ball Tree---Wikipedia]]
-For the construction and search algorithms for Ball Trees.
-*** /Foundations of Multidimensional and Metric Data Structures/ by Samet
-For the informative example of Locality Sensitive Hashing given by
-Figure 4.99 on page 713.
-*** /Introduction to Algorithms/ by CLRS
-For the Insertion Sort algorithm and the Priority Queue data
-structure.
-*** /Nearest Neighbor Methods in Learning and Vision/ by Shakhnarovich, Darrell, and Indyk
-For the general background knowledge on Exact and Approximate Nearest
-Neighbor methods.
-*** [[https://docs.python.org/3/tutorial/datastructures.html#more-on-lists][Python Tutorial Part 5]]
-For the matrix transpose code in Section 5.1.4.
-*** /Similarity Search in High Dimensions via Hashing/ by Gionis, Indyk, and Motwani
-For the Locality Sensitive Hashing algorithm and suggestions for
-parameter values and hash function.
-*** /Understanding Machine Learning/ by Shalev-Shwartz and Ben-David
-For the vanilla KNN search algorithm.
+- Cormen, T. H. and Leiserson, C. E. and Rivest, R. L. and Stein,
+  C. /Introduction to Algorithms/
+  - For the Insertion Sort algorithm and the Priority Queue data
+    structure.
+- Gionis, A. and Indyk, P. and Motwani, R. /Similarity Search in High
+  Dimensions via Hashing/
+  - For the Locality Sensitive Hashing algorithm and suggestions for
+    parameter values and hash functions.
+- Samet, H. /Foundations of Multidimensional and Metric Data
+  Structures/
+  - For the informative example of Locality Sensitive Hashing given by
+    Figure 4.99 on page 713.
+- Shakhnarovich, G. and Darrell, T. and Indyk, P. /Nearest-Neighbor
+  Methods in Learning and Vision/
+  - For the general background knowledge on Exact and Approximate
+    Nearest Neighbor methods.
+- [[https://docs.python.org/3/tutorial/datastructures.html#more-on-lists][Python Tutorial Part 5]]
+  - For the Matrix Transpose code in Section 5.1.4.
+- Shalev-Schwartz, S. and Ben-David, S. /Understanding Machine
+  Learning/
+  - For the vanilla KNN search algorithm.
+- [[https://en.wikipedia.org/wiki/Ball_tree][Wikipedia---Ball Tree]]
+  - For the construction and search algorithms for Ball Trees.
+** Things to Do
+- Replace Insertion Sort with a more sophisticated sorting algorithm.
+
