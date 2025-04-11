@@ -204,12 +204,21 @@ def get_vocabulary(data_points):
 def insertion_sort_parallel(dataset, distances):
     """Insertion sort on distances and dataset in parallel.
 
-    Taken from "Introduction to Algorithms" by CLRS.
+    Meaning that we perform the same transformation, or permutation, on
+    both the distances and dataset.
+
+    For example:
+    [data_pt1, data_pt2, data_pt3] => [data_pt2, data_pt3, data_pt1]
+    [distance1, distance2, distance3] => [distance2, distance3, distance1]
+
+    Taken from Cormen, T. H. and Leiserson, C. E. and Rivest,
+    R. L. and Stein, C. /Introduction to Algorithms/.
 
     Args :
         dataset (2D list) : Training dataset rows including labels.
         distances (1D list) : Distances from a particular point to each
             point in the training dataset.
+
     """
     
     for j in range(1, len(distances)):
@@ -268,8 +277,8 @@ def regress(data_points):
 def transpose(matrix):
     """Transpose a matrix.
 
-    Taken from Python Tutorial Section 5.1.4. : Nested List
-    Comprehensions.
+    Taken from
+    https://docs.python.org/3/tutorial/datastructures.html#more-on-lists .
 
     Args :
         matrix (2D list) : Matrix to be transposed.

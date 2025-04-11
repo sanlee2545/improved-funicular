@@ -92,6 +92,8 @@ class Nearest_Neighbors:
     def ball_tree_search(self, ball_tree, point):
         """Ball tree recursive search.
 
+        Taken from https://en.wikipedia.org/wiki/Ball_tree .
+
         Steps :
         - Set variables related to distance : distance_query_to_node
           is positive when point is closer to the center of the ball
@@ -212,8 +214,8 @@ class Nearest_Neighbors:
         - Do either classification by majority or regression on the k
           nearest neighbors.
 
-        Taken from "Understanding Machine Learning" Ch. 19 : Nearest
-        Neighbor.
+        Taken from Shalev-Schwartz, S. and Ben-David,
+        S. /Understanding Machine Learning/ .
          
         Args :
             test_dataset (2D list) : Same format as training dataset.
@@ -221,6 +223,7 @@ class Nearest_Neighbors:
         Returns :
             predictions (1D list) : Predictions corresponding to the
                 test data points.
+
         """
         
         predictions = []
@@ -255,7 +258,8 @@ class Nearest_Neighbors:
         - Use self.prediction_function on list_of_close_labels to get
           the prediction.
 
-        Taken from "Similarity Search in High Dimensions via Hashing".
+        Taken from Gionis, A. and Indyk, P. and Motwani,
+        R. /Similarity Search in High Dimensions via Hashing/ .
 
         Args :
             test_dataset (2D list) : Test dataset.
@@ -263,6 +267,7 @@ class Nearest_Neighbors:
         Returns :
             predictions (1D list) : Predictions for the test data
                 points.
+
         """
 
         predictions = []
